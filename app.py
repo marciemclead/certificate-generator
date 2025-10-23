@@ -27,7 +27,7 @@ st.caption("Made by **Tanvir Even** | Works on both Mobile 📱 and PC 💻")
 # ====== ADMIN SETTINGS ======
 ADMIN_PASSWORD = "12345"  # Change this
 DEFAULT_NAME_X, DEFAULT_NAME_Y = 740, 995  # Adjust as needed
-DEFAULT_FONT_SIZE = 65
+DEFAULT_FONT_SIZE = 60
 DEFAULT_FONT_COLOR = "#000000"
 
 # ====== SESSION STATE INITIALIZATION ======
@@ -189,5 +189,6 @@ else:
             except Exception as e:
                 st.error(f"❌ An error occurred: {str(e)}")
                 st.info("Please check the template and font files and try again.")
+
 
 
