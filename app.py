@@ -21,7 +21,7 @@ st.caption("Made by **Tanvir Even** | Mobile & PC Compatible")
 
 # ====== ADMIN CONFIGURATION ======
 ADMIN_PASSWORD = "12345"  # Change this password
-NAME_X, NAME_Y = 590, 470  # Fixed text position
+NAME_X, NAME_Y = 930, 730  # Fixed text position
 
 # ====== SESSION STATE SETUP ======
 if "authenticated" not in st.session_state:
@@ -118,3 +118,4 @@ if st.session_state.template_bytes:
             )
 else:
     st.warning("⚠️ No certificate uploaded yet. Please ask the admin to upload one.")
+
