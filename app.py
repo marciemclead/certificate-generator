@@ -21,7 +21,7 @@ st.caption("Made by **Tanvir Even** | Works on both Mobile 📱 and PC 💻")
 # ====== ADMIN SETTINGS ======
 ADMIN_PASSWORD = "12345"  # Change this
 NAME_X, NAME_Y = 940, 740  # Adjust as needed
-FONT_SIZE = 150  # You can manually change this value if needed
+FONT_SIZE = 250  # You can manually change this value if needed
 FONT_COLOR = "#000000"  # You can also change this from code if needed
 
 # ====== SESSION STATE ======
@@ -111,3 +111,4 @@ else:
                 file_name=f"{user_name}_certificate.pdf",
                 mime="application/pdf"
             )
+
