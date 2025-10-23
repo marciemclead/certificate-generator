@@ -41,7 +41,7 @@ if "template_bytes" not in st.session_state:
 if "font_file" not in st.session_state:
     st.session_state.font_file = None
 if "font_size" not in st.session_state:
-    st.session_state.font_size = 70
+    st.session_state.font_size = 170
 if "font_color" not in st.session_state:
     st.session_state.font_color = "#000000"
 
@@ -85,9 +85,7 @@ with st.sidebar:
 
 # ====== USER SECTION ======
 if st.session_state.template_bytes:
-    template = Image.open(io.BytesIO(st.session_state.template_bytes))
-    st.image(template, caption="Certificate Template", use_container_width=True)
-
+    
     st.subheader("✏️ Generate Your Certificate")
     user_name = st.text_input("Enter Your Full Name")
 
@@ -128,3 +126,4 @@ if st.session_state.template_bytes:
             )
 else:
     st.warning("⚠️ No certificate uploaded yet. Please ask the admin to upload one.")
+
