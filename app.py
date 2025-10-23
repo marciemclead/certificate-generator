@@ -31,7 +31,7 @@ if "template_bytes" not in st.session_state:
 if "font_file" not in st.session_state:
     st.session_state.font_file = None
 if "font_size" not in st.session_state:
-    st.session_state.font_size = 80
+    st.session_state.font_size = 280
 if "font_color" not in st.session_state:
     st.session_state.font_color = "#000000"
 
@@ -118,4 +118,5 @@ if st.session_state.template_bytes:
             )
 else:
     st.warning("⚠️ No certificate uploaded yet. Please ask the admin to upload one.")
+
 
