@@ -60,7 +60,7 @@ with st.sidebar:
             st.session_state.font_file = font_file
             st.success("✅ Font uploaded!")
 
-        st.session_state.font_size = st.slider("Font Size", 20, 200, st.session_state.font_size)
+        st.session_state.font_size = st.slider("Font Size", 120, 200, st.session_state.font_size)
         st.session_state.font_color = st.color_picker("Font Color", st.session_state.font_color)
 
         if st.button("🗑️ Remove Uploaded Template"):
@@ -118,5 +118,6 @@ if st.session_state.template_bytes:
             )
 else:
     st.warning("⚠️ No certificate uploaded yet. Please ask the admin to upload one.")
+
 
 
